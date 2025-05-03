@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bill Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bill Tracker</h1>
+
+  <!-- Month Selector -->
+  <label for="monthSelect">Select Month:</label>
+  <input type="month" id="monthSelect" value="2025 Jan">
+
+  <form id="billForm">
+    <input type="text" id="biller" placeholder="Biller Name" required />
+    <input type="number" id="amount" placeholder="Amount" required />
+    <input type="date" id="dueDate" required />
+    <button type="submit">Add Bill</button>
+  </form>
+
+  <!-- Bill List -->
+  <table>
+    <thead>
+      <tr>
+        <th>Paid</th>
+        <th>Biller</th>
+        <th>Amount (₱)</th>
+        <th>Due Date</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="billList"></tbody>
+  </table>
+  
+
+  <button id="exportBtn">Download Selected Month (.json)</button>
+  <button id="exportAllBtn">Download All Bills (.json)</button>
+
+
+  <script src="app.js"></script>
+</body>
+</html>

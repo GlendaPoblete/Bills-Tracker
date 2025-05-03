@@ -1,0 +1,40 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+form input, form button {
+    margin: 5px;
+    padding: 8px;
+}
+
+/* li { margin: 8px 0; }
+    .paid { color: green; font-weight: bold; margin-left: 10px; } */
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1em;
+      }
+      th, td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f4f4f4;
+      }
+      .paid {
+        color: green;
+        font-weight: bold;
+    
+      }
+      .unpaid {
+        color: red;
+        font-weight: bold;
+      }
+      
+      
