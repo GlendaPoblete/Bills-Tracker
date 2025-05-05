@@ -1,5 +1,6 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #c6c0c0; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     max-width: 600px;
     margin: auto;
     padding: 20px;
@@ -10,8 +11,8 @@ form input, form button {
     padding: 8px;
 }
 
-/* li { margin: 8px 0; }
-    .paid { color: green; font-weight: bold; margin-left: 10px; } */
+li { margin: 8px 0; }
+    .paid { color: green; font-weight: bold; margin-left: 10px; }
 
 
     table {

@@ -40,24 +40,6 @@ function renderBills(monthFilter) {
         billList.appendChild(row);
     });
 }
-//   function renderBills(monthFilter?: string) {
-//     const bills = getBills();
-//     billList.innerHTML = '';
-//     const filtered = monthFilter
-//       ? bills.filter(b => b.dueDate.startsWith(monthFilter))
-//       : bills;
-//     filtered.forEach(bill => {
-//       const li = document.createElement('li');
-//       li.innerHTML = `
-//   <input type="checkbox" ${bill.isPaid ? 'checked' : ''} data-id="${bill.id}" />
-//   <strong>${bill.biller}</strong> - ₱${bill.amount.toFixed(2)} - Due: ${bill.dueDate}
-//   ${bill.isPaid ? '<span class="paid">✓ Paid</span>' : ''}
-//   <button data-edit-id="${bill.id}">✏️</button>
-//   <button data-delete-id="${bill.id}">❌</button>
-// `;
-//       billList.appendChild(li);
-//     });
-//   }
 // Handle form submission to add new bill
 billForm.addEventListener('submit', e => {
     e.preventDefault();
